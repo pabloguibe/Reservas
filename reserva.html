@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/reservas.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Reserva Turistica</title>
+</head>
+
+<body>
+    <h1>Reservas</h1>
+    <p>El acceso al parque es Libre y gratuito,siempre que se respeten las normas de conducta y preservación del
+        entorno.</p>
+    <p>No obstante,también disponemos de servicios adicionales, como visita guiada o aula educativa para niños.</p>
+
+    <h2>Horarios y reservas</h2>
+
+
+    <div class="tabla1">
+        <table>
+            <tr>
+                <th class="titulo1" colspan="5">Visitas con guía:</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th colspan="2">Temporada de verano: </th>
+                <th colspan="2">Temporada de invierno: </th>
+            </tr>
+
+            <tr>
+                <th>Horario: </th>
+                <td colspan="2">10:00 - 13:00<br>
+                    16:00 - 19:00
+                </td>
+                <td colspan="2">10:00 - 13:00</td>
+            </tr>
+
+
+            <tr>
+                <th rowspan="2">Tarifas: </th>
+                <td>Individual: </td>
+                <td>Grupos:</td>
+                <td>Individual: </td>
+                <td>Grupos:</td>
+            </tr>
+
+            <tr>
+                <td>5€ persona</td>
+                <td>3€ persona</td>
+                <td>4€ persona</td>
+                <td>2€ persona</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="tabla2">
+
+        <table>
+            <tr>
+                <th class="titulo1" colspan="5">Aula educativa (sólo grupos): </th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th colspan="2">Temporada de verano: </th>
+                <th colspan="2">Temporada de invierno: </th>
+            </tr>
+
+            <tr>
+                <th>Horario: </th>
+                <td colspan="2">9:00 - 10:00<br>
+                    15:00 - 16:00
+                </td>
+                <td colspan="2">10:00 - 11:00</td>
+            </tr>
+
+
+            <tr>
+                <th>Tarifas: </th>
+                <td colspan="2">25€</td>
+                <td>25€</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <h2>Contacto</h2>
+    <p>Si estás pensando visitar el parque con un grupos, por favor,rellena este formulario: </p>
+
+    <form id="formulario" method="post" action="enviar.php">
+        <table>
+            <tr>
+                <th>Nombre:</th>
+                <td><input name="nombre" class="texto" type="text" id="nombre" size="30" /></td>
+            </tr>
+
+            <tr>
+                <th>Email:</th>
+                <td><input name="email" class="texto" type="email" id="email" size="30" /></td>
+            </tr>
+
+            <tr>
+                <th>Fecha de visita: </th>
+                <td><input name="fecha_visita" class="date" type="date" id="fecha_visita" /></td>
+            </tr>
+
+            <tr>
+                <th>Edad del grupo:</th>
+                <td><label><input type="radio" name="edad" value="1"> <b>De 5 a 8</b></label><br>
+                <label><input type="radio" name="edad" value="2"> <b>De 9 a 14</b></label><br>
+                <label><input type="radio" name="edad" value="3"> <b>De 15 a 18</b></label><br>
+                <input type="radio" name="edad" value="4"> <b>Adultos</b>
+
+            </tr>
+
+            <tr>
+                <th colspan="2"><input type="radio" name="edad" value="4"> <b>Deseamos asistir al aula educativa (solo niños)</b>
+            </tr>
+
+            <tr>
+                <th>Observaciones: </th>
+                <td><textarea name="observaciones" id="ob" class="texto" cols="50" rows="5"></textarea>
+            </tr>
+
+            <tr>
+
+                <td colspan="2" ><input type="submit" value="Enviar" class="boton" />
+            </tr>
+            
+            
+
+
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>

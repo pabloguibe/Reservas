@@ -1,0 +1,41 @@
+table, th, td {
+    border: 2px solid #FFD67D  ;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+  }
+
+th {
+    background-color:#E6FED2  ;
+}
+
+td {
+    background-color:#F4FFEB ;
+}
+
+.titulo1 {
+    background-color:#FDDB89  ;
+    color: #008D2B ;
+}
+ 
+.tabla1 {
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+.boton {
+    display: block;
+    width: 25%;
+    font-size: 0.90em;
+    float: right;
+    padding: 10px 10px;
+    cursor: pointer;
+
+}
